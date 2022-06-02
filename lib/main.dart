@@ -30,6 +30,11 @@ class Grade extends StatelessWidget {
         backgroundColor: Colors.amber.shade700,
         centerTitle: true,
       ),
+      body: Container(
+        child: Column(
+          children: [Icon(Icons.add), Icon(Icons.menu), Text("Test")],
+        ),
+      ),
     );
   }
 }
