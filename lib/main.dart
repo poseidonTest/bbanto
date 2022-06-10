@@ -30,10 +30,41 @@ class Grade extends StatelessWidget {
         backgroundColor: Colors.amber.shade700,
         centerTitle: true,
       ),
-      body: Container(
-        child: Column(
-          children: [Icon(Icons.add), Icon(Icons.menu), Text("Test")],
-        ),
+      body: Column(
+        children: [
+          Container(
+            height: 100,
+            color: Colors.red,
+          ),
+          Divider(
+            height: 60,
+            thickness: 3.5,
+            endIndent: 30,
+            color: Colors.grey.shade800,
+          ),
+          Text(
+            "NAME",
+            style: TextStyle(color: Colors.white, letterSpacing: 10),
+          ),
+          Text("BBANTO"),
+          Text("BBASNTO POWER LEVEL"),
+          Text("14"),
+          Row(
+            children: [
+              Icon(Icons.check_circle_outline),
+              Text("using lightsaber")
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.check_circle_outline),
+              Text("face hero tattoo")
+            ],
+          ),
+          Row(
+            children: [Icon(Icons.check_circle_outline), Text("fire flames")],
+          ),
+        ],
       ),
     );
   }
